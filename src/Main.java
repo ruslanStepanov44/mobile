@@ -1,17 +1,23 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+      int clientaccount = 100;
+      int bonusscale = 100;
+      int uploadvolume = 1500;
+      int bonus;
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+      if (uploadvolume >= 1000){
+          bonus = uploadvolume / bonusscale;
+      } else {
+          bonus = 0;
+      }
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+      int totalaccount = clientaccount + uploadvolume + bonus;
+
+      System.out.println("Вы пополнили счёт на" + uploadvolume + "рублей" );
+      System.out.println("Бонус составил" + bonus + "рублей" );
+      System.out.println("ваш баланс" + totalaccount + " рублей ");
+
+
     }
 }
