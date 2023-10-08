@@ -1,22 +1,22 @@
 
 public class Main {
     public static void main(String[] args) {
-      int clientaccount = 100;
-      int bonusscale = 100;
-      int uploadvolume = 1500;
+      int clientAccount = 100;
+      int bonusScale = 100;
+      int uploadVolume = 1500;
       int bonus;
 
-      if (uploadvolume >= 1000){
-          bonus = uploadvolume / bonusscale;
+      if (uploadVolume >= 1000){
+          bonus = uploadVolume / bonusScale;
       } else {
           bonus = 0;
       }
 
-      int totalaccount = clientaccount + uploadvolume + bonus;
+      int totalAccount = clientAccount + uploadVolume + bonus;
 
-      System.out.println("Вы пополнили счёт на" + uploadvolume + "рублей" );
-      System.out.println("Бонус составил" + bonus + "рублей" );
-      System.out.println("ваш баланс" + totalaccount + " рублей ");
+      System.out.println(" Вы пополнили счёт на " + uploadVolume + " рублей " );
+      System.out.println(" Бонус составил " + bonus + " рублей " );
+      System.out.println(" Ваш баланс " + totalAccount + " рублей ");
 
 
     }
